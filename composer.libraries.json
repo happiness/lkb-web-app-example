@@ -1,0 +1,22 @@
+{
+    "require": {
+        "happiness/web-app-example": "*"
+    },
+    "repositories": {
+        "happiness.web-app-example": {
+            "type": "package",
+            "package": {
+                "name": "happiness/web-app-example",
+                "version": "1.0.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "web-app-example"
+                },
+                "dist": {
+                    "url": "https://github.com/happiness/lkb-web-app-example/archive/refs/tags/1.0.1.tar.gz",
+                    "type": "tar"
+                }
+            }
+        }
+    }
+}

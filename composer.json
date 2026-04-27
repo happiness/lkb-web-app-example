@@ -1,25 +1,5 @@
 {
     "name": "lkb/web_app_example",
     "description": "An example of a web app demonstrating how to use the Lantbrukets Kunskapsbank web app framework.",
-    "type": "drupal-custom-module",
-    "require": {
-        "happiness/lkb-web-app-example": "*"
-    },
-    "repositories": {
-        "happiness.lkb-web-app-example": {
-            "type": "package",
-            "package": {
-                "name": "happiness/lkb-web-app-example",
-                "version": "1.0.1",
-                "type": "drupal-library",
-                "extra": {
-                    "installer-name": "web-app-example"
-                },
-                "dist": {
-                    "url": "https://github.com/happiness/lkb-web-app-example/archive/refs/tags/1.0.1.tar.gz",
-                    "type": "tar"
-                }
-            }
-        }
-    }
+    "type": "drupal-custom-module"
 }

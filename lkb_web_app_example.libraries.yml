@@ -3,20 +3,17 @@ lkb_web_apps.remote_web_app_example:
   remote: https://github.com/happiness/lkb-web-app-example
   version: 1.0.0
   js:
-    https://github.com/happiness/lkb-web-app-example/blob/main/assets/web-app-example.min.js: {
-      type: external,
-      minified: true,
-      attributes: {
-        defer: true,
-        async: true,
+    https://github.com/happiness/lkb-web-app-example/blob/main/assets/web-app-example.min.js:
+      type: external
+      minified: true
+      attributes:
+        defer: true
+        async: true
         data-custom-attribute: 'custom-attribute-value'
-      }
-    }
   css:
     theme:
-      https://github.com/happiness/lkb-web-app-example/blob/main/assets/web-app-example.min.css: {
+      https://github.com/happiness/lkb-web-app-example/blob/main/assets/web-app-example.min.css:
         minified: true
-      }
   dependencies:
     - core/drupal
 
@@ -24,13 +21,15 @@ lkb_web_apps.remote_web_app_example:
 lkb_web_apps.local_web_app_example:
   version: 1.0.0
   js:
-    assets/web-app-example.js: {
-      minified: false
+    libraries/web-app-example/dist/web-app-example.min.js:
+      minified: true
+      attributes:
+        defer: true
+        async: true
     }
   css:
     component:
-      assets/web-app-example.css: {
-        minified: false
-      }
+      libraries/web-app-example/dist/web-app-example.min.css:
+        minified: true
   dependencies:
     - core/drupal

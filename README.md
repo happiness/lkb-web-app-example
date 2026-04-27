@@ -29,7 +29,7 @@ the `<NAME>.libraries.yml` file.
 
 ## Drupal installation
 
-Add a repository of the type _path_ to the project root `composer.json`.
+Add a repository of the type *path* to the project root `composer.json`.
 
 ```json
 {
@@ -42,6 +42,7 @@ Add a repository of the type _path_ to the project root `composer.json`.
 }
 ```
 
-Make sure you add the repository before the main packages.drupal.org repository.
+Make sure you add the repository before the main *packages.drupal.org* repository.
 
-Run `composer require lkb/web_app_example` to install the module.
+Run `composer require lkb/web_app_example` to install the module followed by
+`drush pm:install lkb_web_app_example`.

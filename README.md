@@ -13,31 +13,19 @@ a `<NAME>.libraries.yml` file.
 
 ### Required files
 
-- `lkb_web_app_example.info.yml`
-- `composer.json`
-- `lib_web_app_example.libraries.yml`
-
-#### *.libraries.yml
-
-This file declares the JavaScript and CSS libraries that the web app depends on.
-The files can be both local or remote.
-
-```yaml
-google.maps:
-  js:
-    https://maps.googleapis.com/maps/api/js?key=myownapikey&signed_in=true&libraries=drawing&callback=initMap:
-      type: external
-      attributes:
-        defer: true
-        async: true
-        data-test: map-link
-```
-
-For a detailed explanation of the format, please see the documentation [Adding assets (CSS, JS) to a Drupal module via *.libraries.yml](https://www.drupal.org/docs/develop/creating-modules/adding-assets-css-js-to-a-drupal-module-via-librariesyml).
+- `<NAME>.info.yml`: Contains metadata about the web app for use by
+  Drupal.
+- `composer.json`: Contains metadata about the web app for use by Composer.
+  Declares any dependencies the app may have on third-party libraries.
+- `<NAME>.libraries.yml`: Declares the JavaScript and CSS libraries
+  that the web app depends on. The files can be both local or remote. For a
+  detailed explanation of the format, please see the documentation [Adding assets (CSS, JS) to a Drupal module via *.libraries.yml](https://www.drupal.org/docs/develop/creating-modules/adding-assets-css-js-to-a-drupal-module-via-librariesyml).
 
 ### Optional files
 
-- `assets/*`
+Any assets such as images, fonts, or other static files can be placed in the
+`assets` directory. These assets can be referenced in the library definitions in
+the `<NAME>.libraries.yml` file.
 
 ## Drupal installation
 

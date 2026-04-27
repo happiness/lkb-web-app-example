@@ -2,4 +2,4 @@ name: Web App Example
 description: An example of a web app.
 package: Lantbrukets Kunskapsbank
 type: module
-core_version_requirement: ^10
+core_version_requirement: >=10

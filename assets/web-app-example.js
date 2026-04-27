@@ -20,6 +20,7 @@
      *   the global {@link drupalSettings} object is used.
      */
     attach: function (context, settings) {
+      console.log('LKB Web App Example loaded.');
     },
 
     /**
@@ -33,6 +34,7 @@
      *   One of `'unload'`, `'move'`, or `'serialize'`.
      */
     detach: function (context, settings, trigger) {
+      console.log('LKB Web App Example unloaded.');
     }
 
   };

@@ -17,6 +17,24 @@ a `<NAME>.libraries.yml` file.
 - `composer.json`
 - `lib_web_app_example.libraries.yml`
 
+#### *.libraries.yml
+
+This file declares the JavaScript and CSS libraries that the web app depends on.
+The files can be both local or remote.
+
+```yaml
+google.maps:
+  js:
+    https://maps.googleapis.com/maps/api/js?key=myownapikey&signed_in=true&libraries=drawing&callback=initMap:
+      type: external
+      attributes:
+        defer: true
+        async: true
+        data-test: map-link
+```
+
+For a detailed explanation of the format, please see the documentation [Adding assets (CSS, JS) to a Drupal module via *.libraries.yml](https://www.drupal.org/docs/develop/creating-modules/adding-assets-css-js-to-a-drupal-module-via-librariesyml).
+
 ### Optional files
 
 - `assets/*`

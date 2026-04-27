@@ -6,12 +6,10 @@ lkb_web_apps.web_app_example:
     url: https://www.drupal.org/about/licensing
     gpl-compatible: true
   js:
-    assets/web-app-example.js: {}
+    assets/web-app-example.js: {},
+    ht
   css:
     component:
       assets/web-app-example.css: {}
   dependencies:
     - core/drupal
-    - core/jquery
-    - core/once
-    - chosen_lib/chosen

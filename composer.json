@@ -1,0 +1,26 @@
+{
+    "name": "lkb/web_app_example",
+    "description": "An example of a web app demonstrating how to use the Lantbrukets Kunskapsbank web app framework.",
+    "type": "drupal-custom-module",
+    "repositories": {
+        "jjj/chosen": {
+            "type": "package",
+            "package": {
+                "name": "jjj/chosen",
+                "version": "2.2.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "chosen"
+                },
+                "source": {
+                    "url": "https://github.com/JJJ/chosen.git",
+                    "type": "git",
+                    "reference": "2.2.1"
+                }
+            }
+        }
+    },
+    "require": {
+        "jjj/chosen": "2.2.1"
+    }
+}

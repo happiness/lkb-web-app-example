@@ -36,7 +36,7 @@ Add a repository of the type *path* to the project root `composer.json`.
   "repositories": [
     {
       "type": "path",
-      "url": "web/modules/custom/lkb_web_apps/modules/lkb_web_app_example"
+      "url": "web/modules/custom/lkb_web_app_example"
     }
   ]
 }

@@ -42,7 +42,33 @@ Add a repository of the type *path* to the project root `composer.json`.
 }
 ```
 
-Make sure you add the repository before the main *packages.drupal.org* repository.
+If the app has it's any dependencies on third party packages you also need to add
+repository entires for those dependencies, for example:
+
+
+```json
+{
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "happiness/web-app-example",
+        "version": "1.0.1",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "web-app-example"
+        },
+        "dist": {
+          "url": "https://github.com/happiness/lkb-web-app-example/archive/refs/tags/1.0.1.tar.gz",
+          "type": "tar"
+        }
+      }
+    },
+  ]
+}
+```
+
+Make sure you add the repositories before the main *packages.drupal.org* repository.
 
 Run `composer require lkb/web_app_example` to install the module followed by
 `drush pm:install lkb_web_app_example`.
